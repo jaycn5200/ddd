@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MapProfile\**" />
+    <EmbeddedResource Remove="MapProfile\**" />
+    <None Remove="MapProfile\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Test.Contract\Test.Contract.csproj" />
+    <ProjectReference Include="..\Test.EFCore\Test.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>
